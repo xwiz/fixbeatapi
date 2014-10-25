@@ -193,7 +193,6 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
 
         'API'                   => 'Dingo\Api\Facades\API',
-        'FixbeatAuthProvider'  => 'Dingo\Api\Facades\API',
         'Flysystem'             => 'GrahamCampbell\Flysystem\Facades\Flysystem'
 	),
 
