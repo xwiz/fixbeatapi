@@ -26,6 +26,24 @@
         * The API Routes for retrieving business information
         * This is also simple CRUD operations API for businesses
         */
+        Route::group(['prefix' => 'businesses'], function() use ($controllers)
+        {
+            Route::get('/', ['protected' => false, 'as' => 'business.index', 'uses' => $controllers['business'] . '@index']);
+        });
+        
+                /**
+        * The API Routes for retrieving business information
+        * This is also simple CRUD operations API for businesses
+        */
+        Route::group(['prefix' => 'users'], function() use ($controllers)
+        {
+            Route::get('/', ['protected' => false, 'as' => 'users.index', 'uses' => $controllers['users'] . '@index']);
+        });
+        
+        /**
+        * The API Routes for retrieving business information
+        * This is also simple CRUD operations API for businesses
+        */
         Route::group(['prefix' => 'business'], function() use ($controllers)
         {
             Route::get('/', ['protected' => false, 'as' => 'business.index', 'uses' => $controllers['business'] . '@index']);
