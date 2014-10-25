@@ -11,7 +11,7 @@ class UsersTableSeeder extends Seeder {
         User::create([
             'first_name' => 'Chibueze',
             'last_name' => 'Opata',
-            'user_bio' => 'Calm and Collected',
+            'bio' => 'Calm and Collected',
             'user_phone' => '+2348099636703',
             'email' => 'opatachibueze@gmail.com',
             'password' => Hash::make('revolution'),
