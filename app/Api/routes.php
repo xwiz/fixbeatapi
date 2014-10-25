@@ -16,7 +16,7 @@
          */
         Route::group(['prefix' => 'user'], function() use ($controllers)
         {
-            Route::get('/', ['as' => 'users.index', 'uses' => $controllers['user'] . '@index']);
+            Route::get('/', ['protected' => false, 'as' => 'users.index', 'uses' => $controllers['user'] . '@index']);
             Route::post('create', ['protected' => false, 'as' => 'users.create', 'uses' => $controllers['user'] . '@create']);
             Route::get('{user}', ['as' => 'users.show', 'uses' => $controllers['user'] . '@show']);
             Route::post('{user}', ['as' => 'users.update', 'uses' => $controllers['user'] . '@update']);
@@ -28,7 +28,7 @@
         */
         Route::group(['prefix' => 'business'], function() use ($controllers)
         {
-            Route::get('/', ['as' => 'business.index', 'uses' => $controllers['business'] . '@index']);
+            Route::get('/', ['protected' => false, 'as' => 'business.index', 'uses' => $controllers['business'] . '@index']);
             Route::post('create', ['protected' => false, 'as' => 'business.create', 'uses' => $controllers['business'] . '@create']);
             Route::get('{business}', ['as' => 'business.show', 'uses' => $controllers['business'] . '@show']);
             Route::post('{business}', ['as' => 'business.update', 'uses' => $controllers['business'] . '@update']);
