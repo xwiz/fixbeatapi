@@ -37,7 +37,7 @@
         */
         Route::group(['prefix' => 'users'], function() use ($controllers)
         {
-            Route::get('/', ['protected' => false, 'as' => 'users.index', 'uses' => $controllers['users'] . '@index']);
+            Route::get('/', ['protected' => false, 'as' => 'user.index', 'uses' => $controllers['user'] . '@index']);
         });
         
         /**
