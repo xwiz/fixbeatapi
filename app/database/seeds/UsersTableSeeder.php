@@ -16,6 +16,9 @@ class UsersTableSeeder extends Seeder {
             'email' => 'opatachibueze@gmail.com',
             'password' => Hash::make('revolution'),
 			]);
+            
+            
+
 	}
 
 }

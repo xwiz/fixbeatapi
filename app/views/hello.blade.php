@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Shoppi.ng</title>
+	<title>Fixbeat API</title>
 	<style>
 		@import url(//fonts.googleapis.com/css?family=Lato:700);
 
@@ -35,7 +35,7 @@
 </head>
 <body>
 	<div class="welcome">
-        <img src="{{ url('shoppi.ng_logo_master_800x115_v2.png') }}" alt="Shoppi.ng">
+        <img src="{{ url('logo.png') }}" alt="Fixbeat">
 	</div>
 </body>
 </html>
