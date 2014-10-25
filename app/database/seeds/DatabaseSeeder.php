@@ -14,10 +14,8 @@ class DatabaseSeeder extends Seeder {
 	{
 		Eloquent::unguard();
 
-        $this->call('ApiUsersSeeder');
-        $this->call('ProductOptionsSeeder');
-        $this->call('ProductVariantsSeeder');
-        $this->call('ProductVariantValuesSeeder');
+        $this->call('UsersTableSeeder');
+        $this->call('CategoryTableSeeder');
 	}
 
 }
