@@ -5,13 +5,10 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.2.*",
-        "dingo/api": "0.6.*",
-        "way/generators": "2.*",
-<<<<<<< HEAD
-		"fzaninotto/faker": "~1.4"
-=======
+		"dingo/api": "0.6.*",
+		"way/generators": "2.*",
+		"fzaninotto/faker": "~1.4",
 		"graham-campbell/flysystem": "~1.0"
->>>>>>> c9635998801a5bce5076deeae87b5c9690246fdc
 	},
 	"autoload": {
 		"classmap": [
