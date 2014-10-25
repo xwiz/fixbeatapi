@@ -8,7 +8,6 @@ class CategoryTableSeeder extends Seeder
 
     public function run()
     {
-        $faker = Faker::create();
 
         Category::create(['text' => "Active Life"], ['text' => "Agriculture and Farming"], ['text' =>
             "Arts and Crafts"], ['text' => "Bank and Finance"], ['text' =>
